@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+
+
+body{
+	font-family: 'Courier New', monospace;
+	font-size: 12px;
+	color: gray;
+}
+
+header{
+	background-color: navy blue;
+	height: 60px;
+}
+
+header h1{
+	font-family: 'Tourney', cursive;
+	font-size: 20px;
+	color: grey;
+	line-height: 60px
+}
+
+nav{
+	background-color: blue;
+}
+
+nav li{
+	display: inline;
+	list-style: none;
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+
+h1{
+	color: orange;
+	font-size: 140%;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+p{
+	line-height: 16px;
+	margin-bottom: 12px;
+}
+
+footer{
+	background-color: blue;
+	color: white;
+	font-size: 80%;
+	padding: 10px;
+}
