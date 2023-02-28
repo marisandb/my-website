@@ -1,54 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
 
-
 body{
 	font-family: 'Courier New', monospace;
 	font-size: 12px;
 	color: gray;
 }
-
 header{
 	background-color: navy blue;
 	height: 60px;
 }
-
 header h1{
 	font-family: 'Tourney', cursive;
 	font-size: 20px;
 	color: grey;
 	line-height: 60px
 }
-
 nav{
 	background-color: blue;
 }
-
 nav li{
 	display: inline;
 	list-style: none;
 }
-
 nav a{
 	display: inline-block;
 	padding: 10px;
 	color: white;
 }
-
 h1{
 	color: orange;
 	font-size: 140%;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-
 p{
 	line-height: 16px;
 	margin-bottom: 12px;
 }
-
 footer{
 	background-color: blue;
 	color: white;
 	font-size: 80%;
 	padding: 10px;
+}
+main{
+	width: 70%;
+}
+aside{
+	width: 30%;
+}
+main, aside{
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+}
+#content{
+	overflow: auto;
+	position: relative;
+}
+#mobile-nav-button{
+	position: absolute;
+    top:0px;
+    right:0px;
+    width:44px;
+    height:44px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 800px) {
+	#mobile-nav-button{
+		display: block;
+	}
+	#main-nav{
+		position: absolute;
+		top: 60px;
+		height: 100%;
+		width: 0;
+		transition: width .5s;
+		z-index: 100;
+	}
+	#main-nav li{
+		overflow: hidden;
+	}
+	#main-nav .show{
+		width: 250px;
+	}
+	#main-nav ul li{
+		display: block;
+	}
+}
+
+@media screen and (max-width:800px) {
+	header{
+		height: 44px;
+	}
+	main, aside{
+		width: 100%;
+		float: none;
+	}
+	#main-nav{
+		position: absolute;
+		top:44px;
+		height: 100%;
+		width: 0;
+		transition: width .5s;
+		z-index: 100;
+	}
+	#main-nav li{
+		overflow: hidden;
+	}
+	#main-nav.show{
+		width: 250px;
+	}
+	#main-nav ul li{
+		display: block;
+	}
+	#mobile-nav-button{
+		display: block;
+	}
 }
