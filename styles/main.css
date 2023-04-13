@@ -2,7 +2,7 @@
 
 body{
 	font-family: 'Courier New', monospace;
-	font-size: 12px;
+	font-size: 20px;
 	color: gray;
 }
 header{
@@ -11,7 +11,7 @@ header{
 }
 header h1{
 	font-family: 'Tourney', cursive;
-	font-size: 20px;
+	font-size: 24px;
 	color: grey;
 	line-height: 60px
 }
@@ -69,6 +69,26 @@ main, aside{
     text-align: center;
     cursor: pointer;
     display: none;
+}
+/* My CSS */
+.blog-article{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	padding-top: 2%;
+	padding-left: 5%;
+}
+.blog-article p{
+	text-indent: 45px;
+	line-height: 35px;
+}
+.blog-article img{
+	padding: 2%;
+}
+.blog-article pre{
+	background-color: lightgrey;
+	color: black;
 }
 @media screen and (max-width: 800px) {
 	#mobile-nav-button{

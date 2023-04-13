@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>For Loops in JavaScript</title>
+        <meta name="description" content="A basic definition and example of how for loops work">
+        <meta name="author" content="Marisa Bartelt">
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<script src="../js/main.js"></script>
+	</head>
+	<body>	
+		<header>
+			<h1>Welcome to My Website</h1>
+		</header>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#">Pictures</a></li>
+				<li><a href="./index.html">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+
+			</ul>
+		</nav>
+		<div id="content">
+			<main>
+                <h1>For Loops in JavaScript</h1>
+                <div class="blog-article">
+                    <p>A for loop is a type of loop that allows you to iterate over a set of data or perform a set of operations a fixed number of times. The for loop has three main components. Starting with the initialization statement, then the condition, and finally the increment statement. Here's what a basic for loop looks like:</p>
+                    <pre>
+                        for (let i = 0; i < 5; i++) { 
+                            console.log(i); }
+                    </pre>
+                    <p>In this example, the initialization statement creates a variable i and sets it to 0. The condition checks whether i is less than 5. The increment statement increments i by 1 on each iteration of the loop. The code block inside the curly braces is executed each time the condition is true, which means that the loop will run five times, logging the value of i to the console on each iteration.</p>
+                    <p>For loops can be used to iterate over arrays, strings, and other iterable objects. Here's an example of a for loop that iterates over an array:</p>
+                    <pre>
+                        const colors = ['red', 'yellow', 'blue'];
+    
+                        for (let i = 0; i < colors.length; i++){
+                          console.log(colors[i]); }
+                    </pre>
+                    <p>In this example, the loop iterates over the colors array and logs each color to the console. The condition in the for loop checks whether i is less than the length of the array, and the code block inside the loop accesses each element of the array using the index i.</p>
+                    <p>Overall, for loops are extremely useful in programming. The ability to iterate over data and perform operations a set number of times is truly invaluable and time saving.</p>
+                </div>
+                <p>Written by Marisa Bartelt</p>
+                <p>April 12th, 2023</p>
+            </main>
+		</div>
+		<footer>
+			&copy; Marisa Bartelt 2023
+		</footer>
+		<div id="mobile-nav-button">&#9776</div>
+	</body>
+</html>
