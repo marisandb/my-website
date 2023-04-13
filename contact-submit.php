@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // YOU SHOULD SET THESE TWO VARIABLES...
-$admin_email = "";//MAKE SURE TO PUT YOUR EMAIL ADDRESS HERE!!!
+$admin_email = "marisandb615@gmail.com";//MAKE SURE TO PUT YOUR EMAIL ADDRESS HERE!!!
 $email_subject = "Your Website - Contact Form Submitted";
 
 if(empty($admin_email)){
