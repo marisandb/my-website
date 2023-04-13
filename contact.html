@@ -23,13 +23,13 @@
 			<main>
 				<form action="contact-submit.php" id="contactForm" method="POST">
                     <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="txtFirstName">
+                    <input type="text" name="firstName" id="txtFirstName" required>
                     <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="txtLastName">
+                    <input type="text" name="lastName" id="txtLastName" required>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="txtEmail">
+                    <input type="email" name="email" id="txtEmail" required>
                     <label for="comments">Question/Comment</label>
-                    <textarea name="comments" id="txtComments" cols="30" rows="10"></textarea>
+                    <textarea name="comments" id="txtComments" cols="30" rows="10" required></textarea>
 		<input type='button' value='Submit'>
                 </form>
 			</main>
