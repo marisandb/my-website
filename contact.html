@@ -13,9 +13,9 @@
 		<nav id="main-nav">
 			<ul>
 				<li><a href="./index.html">Home</a></li>
-				<li><a href="#">Pictures</a></li>
+				<li><a href="./photos.html">Pictures</a></li>
 				<li><a href="./blog/index.html">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="./contact.html">Contact</a></li>
 
 			</ul>
 		</nav>
@@ -24,15 +24,31 @@
 				<form action="contact-submit.php" id="contactForm" method="POST">
                     <label for="firstName">First Name</label>
                     <input type="text" name="firstName" id="txtFirstName" required>
+					<br>
                     <label for="lastName">Last Name</label>
                     <input type="text" name="lastName" id="txtLastName" required>
+					<br>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="txtEmail" required>
+					<br>
                     <label for="comments">Question/Comment</label>
                     <textarea name="comments" id="txtComments" cols="30" rows="10" required></textarea>
-		<input type='button' value='Submit'>
+					<br>
+					<input type='button' id="submitbtn" value='Submit'>
                 </form>
+				<div class="formMessage">
+					<h2 id="formMessage"></h2>
+				</div>
 			</main>
+			<aside>
+				<h1>My Hobbies</h1>
+				<img src="./images/hiking.jpg" alt="boots sitting on moss" width="100px">
+				<ul>
+					<li>Playing Soccer</li>
+					<li>Hiking</li>
+					<li>Crocheting</li>
+				</ul>
+			</aside>
 		</div>
 		<footer>
 			&copy; Marisa Bartelt 2023
